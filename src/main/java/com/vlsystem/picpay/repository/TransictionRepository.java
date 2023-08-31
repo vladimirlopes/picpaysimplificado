@@ -1,5 +1,9 @@
 package com.vlsystem.picpay.repository;
 
-public interface TransictionRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.vlsystem.picpay.domain.transaction.Transaction;
+
+public interface TransictionRepository extends JpaRepository<Transaction, Long> {
 
 }
